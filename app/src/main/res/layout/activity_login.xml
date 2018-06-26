@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:contentDescription="@null"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/EditText"
+                android:layout_below="@+id/iv_logo"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:drawableLeft="@drawable/lock_plus"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableStart="@drawable/lock_plus"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
